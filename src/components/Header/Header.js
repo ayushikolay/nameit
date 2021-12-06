@@ -13,11 +13,15 @@ const Header = ({ headTitle, headerExpanded }) => {
                 }`}
                 alt="headerImage"
             />
-            <h1 className={`head-text ${
+            <h1
+                className={`head-text ${
                     headerExpanded
                         ? 'head-text-expanded'
                         : `head-text-contracted`
-                }`}>{headTitle}</h1>
+                }`}
+            >
+                {headTitle}
+            </h1>
         </div>
     );
 };
