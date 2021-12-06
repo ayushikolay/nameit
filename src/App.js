@@ -4,15 +4,29 @@ import SearchBox from './components/SearchBox/SearchBox';
 import './App.css';
 
 class App extends React.Component {
-    state = {
-      headerText: "This is a cool app"
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            headerText: 'Name It!',
+            headerExpanded: true,
+        };
+    }
+
+    handleInputChange = (inputText) => {
+        this.setState({
+            headerExpanded: !inputText,
+        });
     };
 
     render() {
         return (
             <div className="App">
-                <Header />
-                <SearchBox />
+                <Header
+                    headerExpanded={this.state.headerExpanded}
+                    headTitle={this.state.headerText}
+                />
+                <SearchBox onInputChange={this.handleInputChange} />
             </div>
         );
     }
