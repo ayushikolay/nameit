@@ -8,6 +8,7 @@ const NameCard = ({ suggestedName }) => {
     return (
         <a
             className="card-link"
+            rel="noreferrer"
             href={`${nameCheapUrl}${suggestedName}`}
             target="_blank"
         >
