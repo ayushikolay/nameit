@@ -1,9 +1,15 @@
 # Getting Started with Name It! App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4>About</h4>
+<p>It suggests us the domain name for our project and tells us whether that domain name is available or not.</p>
+
+<h4><b>Link: </b>https://ayushikolay.github.io/nameit/</h4>
+
 
 ## Available Scripts
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 In the project directory, you can run:
 
 ### `npm start`
